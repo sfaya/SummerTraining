@@ -1,0 +1,12 @@
+<div class="row">
+    <div class="col-xs-12">
+     <!--<app-member-item
+        *ngFor="let memeberEl of members | keyvalue; let i = index"
+        [item]="memeberEl"
+        [indice]="i"></app-member-item>-->
+        <div *ngFor="let memeberEl of members | keyvalue;">
+          <h4>{{memeberEl.fname | json}}</h4>
+        </div>
+      
+    </div>
+  </div>
